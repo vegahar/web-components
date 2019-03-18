@@ -15,13 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "preact": "^8.4.2",
-    "preact-compat": "^3.18.4",
-    "todo": "^1.1.0"
+    "preact-compat": "^3.18.4"
   },
   "devDependencies": {
     "http-server": "^0.11.1",
     "babel-core": "^6.26.3",
     "babel-preset-preact": "^1.1.0",
-    "parcel-bundler": "^1.11.0"
+    "parcel-bundler": "^1.12.2"
   }
 }
