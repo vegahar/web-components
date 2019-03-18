@@ -1,4 +1,7 @@
-class Shop extends HTMLElement {
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+window.customElements.define('new-shop', class extends HTMLElement {
     connectedCallback() {
       const mountPoint = document.createElement('span');
       this.attachShadow({ mode: 'open' }).appendChild(mountPoint);
@@ -7,4 +10,4 @@ class Shop extends HTMLElement {
       ReactDOM.render(<h1>Shop {name}</h1>, mountPoint);
     }
   }
-  customElements.define('new-shop', Shop);
+  );

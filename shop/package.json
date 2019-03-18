@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "http-server ./dist -p 8080 --cors=true",
     "watch": "parcel watch index.html",
     "serve": "parcel index.html",
     "build": "parcel build main.js",
@@ -13,13 +14,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^0.11.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-transform-custom-element-classes": "^0.1.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.12.2"
   }
 }
